@@ -46,7 +46,7 @@ engine.addBloomEffect({
  * * TITLE
  * * *******************
  */
-const text = new AnimatedText3D('Boreal Sky', { color: '#FFFFFF', size: app.isMobile ? 0.08 : 0.1, wireframe: true, opacity: 1, });
+const text = new AnimatedText3D('Digital Craft', { color: '#FFFFFF', size: app.isMobile ? 0.08 : 0.1, wireframe: true, opacity: 1, });
 text.position.x -= text.basePosition * 0.5;
 engine.add(text);
 
@@ -78,7 +78,8 @@ const sphere = new Mesh(geometry, material);
 engine.add(sphere);
 sphere.position.z = 2;
 
-const COLORS = ['#FFFAFF', '#0A2463', '#3E92CC', '#723bb7', '#efd28e', '#3f9d8c'].map((col) => new Color(col));
+//const COLORS = ['#FFFAFF', '#0A2463', '#3E92CC', '#723bb7', '#efd28e', '#3f9d8c'].map((col) => new Color(col));
+const COLORS = ['#e0ffe0', '#13630a', '#44e543', '#33ab4d', '#caef8e', '#44e543'].map((col) => new Color(col));
 const STATIC_PROPS = {
   transformLineMethod: p => p,
 };
